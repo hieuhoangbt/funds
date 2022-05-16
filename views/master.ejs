@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund</title>
+    <link href="./css/layout.css" rel="stylesheet" />
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/web3.js"></script>
+    <script src="./js/process.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="info">
+            <button id="bt_connectMM">Connect MetaMask</button>
+            <h3 id="curAddress">...</h3>
+        </div>
+        <div id="install">
+            <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en" target="_blank">Click here to install MetaMask</a>
+        </div>
+        <div id="inputForm">
+            <input type="text" id="txt_HoTen" placeholder="Ho Ten" />
+            <br />
+            <input type="text" id="txt_Tien" placeholder="0.0 ETH" />
+            <br />
+            <button id="btn_Send">Send</button>
+            <p id="notification"></p>
+        </div>
+        <div id="inputFormRutTien">
+            <input type="text" id="txt_vi" placeholder="Vi" />
+            <br />
+            <button id="btn_Withdraw">Withdraw</button>
+            <p id="withdraw_result"></p>
+        </div>
+        <div id="listHS">
+            <h2 id="tongTien">
+                Tong so HS: <em id="counter"></em> | 
+                Tong Tien: <em id="balance"></em>
+            </h2>
+            <table width="500" id="dsHs" border="1">
+                <tr>
+                    <th>Ho Ten</th>
+                    <th>Vi</th>
+                    <th>ETH</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
